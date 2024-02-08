@@ -605,3 +605,42 @@ body{
   top: 10px;
   font-size: 30px;
 }
+
+footer{
+  /* color: #000; */
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer h2{
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+footer p{
+  margin: auto;
+  width: 400px;
+  text-align: center;
+  white-space: normal;
+  font-weight: 300;
+}
+
+footer ul{
+  text-align: center;
+  margin: 20px;
+  font-weight: 300;
+}
+
+footer .infomation{
+  display: none;
+}

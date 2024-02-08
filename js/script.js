@@ -40,6 +40,7 @@ $(document).ready(function(){
       percentSpan.parent().css('transform', 'scale(1)');
     });
   }
+
 }
 
 function startCounting(num, countBoxSelector, speed) {
@@ -63,29 +64,6 @@ function startCounting(num, countBoxSelector, speed) {
   });
 }
 increaseNumber();
-  
-  /* function startCounting(num, elementSelector, maxNum){
-    let element = document.querySelector(elementSelector);
-    if(num == 0){
-      element.innerHTML = '0';
-    } else {
-      const each = Math.ceil(num/30);
-      let time = 0
-  
-      for(let i=0; i<=num; i+=each){
-        setTimeout(() => {
-          element.innerHTML = new Intl.NumberFormat().format(i.toFixed(2));
-        }, 30*time);
-        if(i+each>this.maxNum1){
-          setTimeout(() => {
-            element.innerHTML = new Intl.NumberFormat().format(maxNum.toFixed(2));
-          }, 30*(time+1));
-        }
-        time++;
-      };
-    };
-  };
-  increaseNumber(); */
 
 /* Scroll Event */
   let animationStarted = false;
@@ -259,5 +237,11 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       document.querySelector('.modal-form').submit();
+  });
+});
+
+$(function () {
+  $('#toggleButton').click(function () {
+      $(this).siblings().slideToggle();
   });
 });
