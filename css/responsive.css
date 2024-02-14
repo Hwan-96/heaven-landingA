@@ -54,6 +54,8 @@
 
   .stock-item strong{display: inline;}
 
+  .s-wrap .container{flex-direction: column;}
+  .s-wrap h2{font-size: 4rem;}
 }
 
 @media (max-width:619px){
@@ -176,6 +178,8 @@
     width: 80%;
   }
   footer ul{font-size: .8rem;}
+
+  .s-wrap h2{font-size: 3rem;}
 }
 
 @media (max-width:320px){
@@ -185,5 +189,6 @@
   .modal-form .check_box{font-size: 0.8rem;}
   .caption{white-space:wrap; font-size: 0.8rem;}
   .stock-list, .stock-item strong{font-size: 1rem;}
+  .s-wrap h2{font-size: 2rem;}
 }
 

@@ -203,6 +203,12 @@ document.addEventListener('DOMContentLoaded', function () {
           event.preventDefault();
           return false;
       }
+      
+      if (!/^[가-힣]+$/.test(nameValue)) {
+        alert("한글을 입력해주세요.");
+        event.preventDefault();
+        return false;
+    }
 
       let telInput = document.querySelector('input[name="tel2"]');
       let telValue = telInput.value.trim();
@@ -210,6 +216,12 @@ document.addEventListener('DOMContentLoaded', function () {
           alert("전화번호를 입력해주세요.");
           event.preventDefault();
           return false;
+      }
+
+      if (!/^\d+$/.test(telValue)) {
+        alert("전화번호는 숫자만 입력해주세요.");
+        event.preventDefault();
+        return false;
       }
 
       let option1Checked = false;
@@ -237,6 +249,8 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       document.querySelector('.modal-form').submit();
+
+      window.location.href = 'success.html';
   });
 });
 
